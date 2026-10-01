@@ -32,8 +32,11 @@
     padding: 120px 0 80px;
     position: relative;
     overflow: hidden;
-    background: var(--pn-navy);           /* Deep Navy canvas */
+background: url("../assets/ddcf99c0cac52a3db016aa87621d7ef7 (1).jpg")
+    center /cover no-repeat;
+    min-height: 500px; 
     font-family: "DM Sans", sans-serif;
+    padding-top: 800px;
 }
 
 /* Radial glow — top right, navy-blue tint */

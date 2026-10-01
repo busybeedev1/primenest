@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import NavbarBs from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./navbar.css";
-import { navLinks } from '../../data/navLinks';
 
 const Navbar = () => {
     const navRef = useRef(null);
@@ -53,7 +52,7 @@ const Navbar = () => {
             className="nav"
             fixed="top"
         >
-            <Container className="nav-inner">
+            <Container fluid className="nav-inner">
 
                 <NavbarBs.Brand
                     as={Link}
