@@ -21,7 +21,6 @@ const HeroSection = () => {
 
                         <div className="hero-badge reveal">
                             <div className="hero-badge-dot">✦</div>
-
                             <span>
                                 Lagos's <strong>#1 Premium Property Platform</strong>
                             </span>
