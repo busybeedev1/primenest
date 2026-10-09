@@ -1,0 +1,198 @@
+```css
+/* ── Prime Nest Trust Banner ── */
+
+.pn-trust-banner {
+    position: relative;
+    width: 100%;
+    padding: 58px 24px;
+    overflow: hidden;
+    background: #F5F7FB;
+    border-top: 1px solid rgba(11, 30, 61, 0.06);
+    border-bottom: 1px solid rgba(11, 30, 61, 0.06);
+    font-family: "DM Sans", sans-serif;
+}
+
+.pn-trust-banner *,
+.pn-trust-banner *::before,
+.pn-trust-banner *::after {
+    box-sizing: border-box;
+}
+
+.pn-trust-banner__inner {
+    width: 100%;
+    max-width: 1240px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 64px;
+}
+
+/* Intro */
+
+.pn-trust-banner__eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #A88735;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.pn-trust-banner__intro h2 {
+    max-width: 540px;
+    margin: 0 0 16px;
+    color: #0B1E3D;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 750;
+    line-height: 1.17;
+    letter-spacing: -1.3px;
+}
+
+.pn-trust-banner__intro h2 span {
+    color: #1A3A6B;
+}
+
+.pn-trust-banner__intro > p {
+    max-width: 510px;
+    margin: 0 0 23px;
+    color: #647084;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.pn-trust-banner__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #0B1E3D;
+    font-size: 13px;
+    font-weight: 750;
+    text-decoration: none;
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.pn-trust-banner__cta span {
+    color: #A88735;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.pn-trust-banner__cta:hover {
+    gap: 17px;
+    color: #A88735;
+}
+
+/* Feature list */
+
+.pn-trust-banner__features {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.pn-trust-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(11, 30, 61, 0.09);
+}
+
+.pn-trust-feature:first-child {
+    padding-top: 0;
+}
+
+.pn-trust-feature:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.pn-trust-feature__icon {
+    display: flex;
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(201, 168, 76, 0.35);
+    border-radius: 13px;
+    background: #FFFFFF;
+}
+
+.pn-trust-feature__icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: #1A3A6B;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.pn-trust-feature h3 {
+    margin: 1px 0 5px;
+    color: #0B1E3D;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.pn-trust-feature p {
+    max-width: 340px;
+    margin: 0;
+    color: #687488;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .pn-trust-banner {
+        padding: 46px 24px;
+    }
+
+    .pn-trust-banner__inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+    }
+
+    .pn-trust-banner__intro h2 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+    .pn-trust-banner {
+        padding: 38px 20px;
+    }
+
+    .pn-trust-banner__inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .pn-trust-banner__intro h2 {
+        max-width: 420px;
+        font-size: 29px;
+        letter-spacing: -0.8px;
+    }
+
+    .pn-trust-banner__intro > p {
+        font-size: 13px;
+    }
+
+    .pn-trust-feature {
+        gap: 14px;
+        padding: 17px 0;
+    }
+
+    .pn-trust-feature__icon {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+        border-radius: 11px;
+    }
+}
+```

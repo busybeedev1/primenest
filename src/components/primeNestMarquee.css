@@ -1,0 +1,99 @@
+/* ── Prime Nest Marquee ── */
+/* ── Design tokens ── */
+:root {
+    /* PrimeNest brand palette */
+    --pn-navy: #0B1E3D;
+    /* Deep Navy — nav bg */
+    --pn-navy-scrolled: #0F2447;
+    /* Slightly deeper on scroll */
+    --pn-royal: #1A3A6B;
+    /* Royal Navy — hover bg, avatar */
+    --pn-gold: #C9A84C;
+    /* Gold — accent, CTA, underline */
+    --pn-gold-hover: #A88735;
+    /* Gold darkened — button hover */
+    --pn-gold-ghost: rgba(201, 168, 76, 0.10);
+    /* Gold tint — link hover bg */
+    --pn-gold-border: rgba(201, 168, 76, 0.28);
+    /* Gold tint — link hover ring */
+    --pn-gold-glow: rgba(201, 168, 76, 0.30);
+    /* Shadow glow for CTA */
+    --pn-link-default: #8FA7C4;
+    /* Muted blue-gray — inactive links */
+    --pn-link-active: #FFFFFF;
+    /* White — active/hover link text */
+    --pn-scroll-border: rgba(201, 168, 76, 0.20);
+    /* Subtle gold bottom border */
+    --pn-hamburger: #FFFFFF;
+    /* Hamburger bar color */
+
+    /* Animation easing */
+    --silk-dur: 0.35s;
+    --silk: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pn-marquee {
+    width: 100%;
+    overflow: hidden;
+    padding: 16px 0;
+    background: white;
+    border-top: 1px solid rgba(201, 168, 76, 0.35);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.35);
+}
+
+.pn-marquee__track {
+    display: flex;
+    width: max-content;
+    animation: pn-marquee-scroll 35s linear infinite;
+}
+
+.pn-marquee__group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 28px;
+    padding-right: 28px;
+}
+
+.pn-marquee__item {
+    display: inline-block;
+    flex-shrink: 0;
+    color: var(--pn-navy-scrolled) !important;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.pn-marquee__star {
+    display: inline-block;
+    flex-shrink: 0;
+    color: #C9A84C;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.pn-marquee:hover .pn-marquee__track {
+    animation-play-state: paused;
+}
+
+@keyframes pn-marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pn-marquee__track {
+        animation: none;
+    }
+}

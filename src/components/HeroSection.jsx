@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import "./heroSection.css";
-import PropertySearchFilter from './PropertySearchFilter';
 
 const HeroSection = () => {
 
